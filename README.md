@@ -42,6 +42,10 @@ git add -A (-A para agregar todos los archivos sin seguimiento y no omitidos, co
 
 git diff HEAD^ (Comparar las últimas dos confirmaciones)
 
+git status, solo sigue los cambios en los archivos y no en los directorios
+
+git log --oneline (lista concisa de cambios), se puede añadir -nX donde X es el número de líneas que se quiere mostrar
+
 
 
 
