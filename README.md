@@ -46,9 +46,24 @@ git status, solo sigue los cambios en los archivos y no en los directorios
 
 git log --oneline (lista concisa de cambios), se puede añadir -nX donde X es el número de líneas que se quiere mostrar
 
+Después de corregir errores se puede utilizar:
+git commit --amend --no-edit (--amend para guardar en la misma confirmación que la original y --no-edit para no modificar el mensaje de confirmación)
 
+git checkout -- file_name, si se borra algún archivo por accidente, se puede recuperar de esta forma, siendo file_name el nombre del archivo y -- sirve para 
 
+git rm archivo.extension, guarda en su índice que se ha borrado ese archivo
 
+git reset HEAD index.html, revierte la eliminación del archivo del almacenamiento provisional. Después se utiliza git checkout para recuperar el archivo al disco
 
+git revert, cancela la última confirmación anterior
+
+git revert HEAD, realiza una confirmación exactamente opuesta a la última, dejando el historial intacto
+
+Existen varios tipos de restablecimiento:
+    - Por defecto, --mixed, restableceel índice pero no el arbol de trabajo, también mueve HEAD si se especifica otra confirmación
+    - --soft, solo mueve HEAD y deja el índice y el 
+    árbol de trabajo sin cambios (todos los cambios como pedientes de confirmar)
+    - --hard, cambia el índice y el árbol de trabajo para que concidan con la confirmación especificada. Los vambiso realizados en los archivos seguidos se descartan
+         
 
 
