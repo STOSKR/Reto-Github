@@ -64,6 +64,36 @@ Existen varios tipos de restablecimiento:
     - --soft, solo mueve HEAD y deja el índice y el 
     árbol de trabajo sin cambios (todos los cambios como pedientes de confirmar)
     - --hard, cambia el índice y el árbol de trabajo para que concidan con la confirmación especificada. Los vambiso realizados en los archivos seguidos se descartan
-         
+----------------------------------------------
+
+MÓDULO 3
+
+git clone, puede clonar un repositorio independientemente de dónde esté almacenado
+
+origin, referencia al repositorio original
+
+git pull, para incorporar cambios confirmados de origin
+
+scp, copia todo
+
+git request-pull -p origin/main, solicitud de incorporación de cambios. Para evitar errores de incorporación
+
+pwd, para comprobar la ubicación de la carpeta
+
+Se puede volver a usar git config user.name para crear otro usuario y otro correo
+----------------------------------------------
+
+MÓDULO 4
+
+git branch, creación de ramas
+
+git checkout, cambio entre ramas
+
+git merge, combinar ramas
+    --ff-only BRANCH, produce error si main ha cambiado 
+    
+Primero se hace el cambio a la rama principal y después se hace merge para combinar con la rama deseada
+
+
 
 
