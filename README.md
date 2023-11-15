@@ -22,7 +22,8 @@ git commit (confirmar cambiso para subir)
 git log (ver historial de commits)
 
 git help (pedir ayuda sobre posibles comandos)
-----------------------------------------------
+
+---------------------------------------------
 
 MÓDULO 2
 
@@ -64,6 +65,7 @@ Existen varios tipos de restablecimiento:
     - --soft, solo mueve HEAD y deja el índice y el 
     árbol de trabajo sin cambios (todos los cambios como pedientes de confirmar)
     - --hard, cambia el índice y el árbol de trabajo para que concidan con la confirmación especificada. Los vambiso realizados en los archivos seguidos se descartan
+
 ----------------------------------------------
 
 MÓDULO 3
@@ -81,6 +83,7 @@ git request-pull -p origin/main, solicitud de incorporación de cambios. Para ev
 pwd, para comprobar la ubicación de la carpeta
 
 Se puede volver a usar git config user.name para crear otro usuario y otro correo
+
 ----------------------------------------------
 
 MÓDULO 4
@@ -93,10 +96,6 @@ git merge, combinar ramas
     --ff-only BRANCH, produce error si main ha cambiado 
     
 Primero se hace el cambio a la rama principal y después se hace merge para combinar con la rama deseada
-
-----------------------------------------------
-
-MÓDULO 5
 
 
 
